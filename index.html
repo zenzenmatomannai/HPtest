@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="./loading.js"></script>
 </head>
@@ -143,11 +144,31 @@
                         </div>
                     </div>
                 </div>
-                <div id="album">
-                </div>
-                <div id="link">
+
+                <!-- gallery -->
+                <div class="album" id="album">
+                    <h2>GALLERY</h2>
+                    <ul class="gallery">
+                        <li><img src="./photo/1.jpg" alt=""></li>
+                        <li><img src="./photo/2.jpg" alt=""></li>
+                        <li><img src="./photo/3.jpg" alt=""></li>
+                        <li><img src="./photo/4.jpg" alt=""></li>
+                        <li><img src="./photo/5.jpg" alt=""></li>
+                        <li><img src="./photo/6.jpg" alt=""></li>
+                    </ul>
+                    <ul class="choice-btn">
+                        <li><img src="./photo/1.jpg" alt=""></li>
+                        <li><img src="./photo/2.jpg" alt=""></li>
+                        <li><img src="./photo/3.jpg" alt=""></li>
+                        <li><img src="./photo/4.jpg" alt=""></li>
+                        <li><img src="./photo/5.jpg" alt=""></li>
+                        <li><img src="./photo/6.jpg" alt=""></li>
+                    </ul>
                 </div>
             </div>
+            <div id="link">
+            </div>
+            <!-- </div> -->
         </div>
     <!-- </main> -->
     <!-- フッター  -->
@@ -162,5 +183,8 @@
             glare:false
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./gallery.js"></script>
 </body>
 </html>
