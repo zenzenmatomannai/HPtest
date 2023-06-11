@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=Shift_JIS">
+	<title>走り幅跳び</title>
+</head>
+
+
+<body background="../images/bg01.gif" leftmargin="50" rightmargin="50" onLoad="Reset();">
+<script src="common.js"></script>
+<script src="habatobi.js"></script>
+
+<span id="lay0" style="position:absolute;">
+<img src="hgimgs/hg-run.gif" name="harigane" width="64" height="64" border="0">
+</span>
+
+<span id="angle0" style="position:absolute;visibility:hidden;">
+<img src="others/light0.gif" name="dot0" width="8" height="8" border="0">
+</span>
+<span id="angle1" style="position:absolute;visibility:hidden;">
+<img src="others/light0.gif" name="dot1" width="8" height="8" border="0">
+</span>
+<span id="angle2" style="position:absolute;visibility:hidden;">
+<img src="others/light0.gif" name="dot2" width="8" height="8" border="0">
+</span>
+
+<span id="point" style="position:absolute;visibility:hidden;">
+<img src="others/lightr.gif" name="dot3" width="8" height="8" border="0">
+</span>
+
+<table width="100%">
+<tr><td bgcolor="#7fffff" height="120" colspan="2">
+</td></tr>
+<tr>
+	<td bgcolor="maroon" width="200" height="20"></td>
+	<td bgcolor="olive" height="20"></td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td bgcolor="white">
+	<font size="4">スピードゲージ　<span id="bar1"></span></font>
+</td></tr>
+</table>
+
+<table border="1" cellpadding="8" bgcolor="white" bordercolor="black">
+<tr>
+	<th align="center" width="200"><br>
+	<font size="6" color="green">ハリガネ君の<br>走り幅跳び</font><br><br>
+	</th>
+	<td width="400" colspan="2">
+	ハリガネ君が走り幅跳びをします！<br>
+	タイミング良く「ＳＴＡＲＴ」を押し→離して遠くまで跳ぼう！<br>
+	踏み切り線を越えるとジャンプできなくなるので注意しよう！<br>
+	</td>
+</tr>
+
+<tr>
+	<td align="center" width="200">
+	<font size="4" color="blue"><b>飛距離 <span id="distance">0</span> m</b></font>
+	</td>
+	<td align="center" width="200">
+	<input type="button" name="start" value="ＳＴＡＲＴ！" onMouseDown="Action1();" onMouseUp="Action2();">
+	<input type="button" name="reset" value="ＲＥＳＥＴ！" onClick="Reset();">
+	</td>
+</tr>
+</table><br clear="all">
+
+<br><hr color="black">
+
+<br><div align="center"><a href="./">戻る</a></div>
+<br><br>
+</body>
+
+</html>
